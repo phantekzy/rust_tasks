@@ -12,3 +12,7 @@ pub fn create_task(id: u32, name: &str, p: Priority, desc: Option<&str>) -> Resu
         is_done: false,
     })
 }
+
+pub fn mark_completed(task: &mut Task) {
+    task.is_done = true;
+}
