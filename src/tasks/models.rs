@@ -9,7 +9,7 @@ pub enum Priority {
 pub struct Task {
     pub id: u32,
     pub name: String,
-    pub priority: priority,
+    pub priority: Priority,
     pub description: Option<String>,
     pub is_done: bool,
 }
