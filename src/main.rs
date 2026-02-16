@@ -10,4 +10,7 @@ fn main() {
     if let Ok(t) = create_task(2, "Learn Modules", Priority::Medium, None) {
         todo_list.push(t);
     }
+    if let Ok(t) = create_task(3, "Buy Coffee", Priority::Low, None) {
+        todo_list.push(t);
+    }
 }
