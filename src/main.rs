@@ -22,5 +22,10 @@ fn main() {
 
     for task in &todo_list {
         let status = if task.is_done { "[DONE]" } else { "[ ]" };
+
+        println!(
+            "{} ID: {} | Priority: {:?} | Name: {} | Desc: {:?}",
+            status, task.id, task.priority, task.name, task.description
+        );
     }
 }
