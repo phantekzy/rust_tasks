@@ -19,4 +19,8 @@ fn main() {
     if let Some(first_task) = todo_list.get_mut(0) {
         mark_completed(first_task);
     }
+
+    for task in &todo_list {
+        let status = if task.is_done { "[DONE]" } else { "[ ]" };
+    }
 }
